@@ -54,6 +54,19 @@ function check() {
 }
 
 
+var input = document.getElementById("myInput");
+
+var start = false
+
+document.addEventListener("keyup", function(event) {
+  
+  if (event.keyCode === 13) {  
+    start = true
+
+  }
+});
+
+
 var a = 0
 main()
 function main(){
@@ -61,7 +74,7 @@ function main(){
     requestAnimationFrame(main)
     check()
     if (a % 15 == 1) {
-        if (grid[99][99]) {
+        if (start == true) {
         change()
         
      }
