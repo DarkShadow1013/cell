@@ -62,6 +62,7 @@ document.addEventListener("keyup", function(event) {
   
   if (event.keyCode === 13) {  
     start = true
+    console.log('hi')
 
   }
 });
